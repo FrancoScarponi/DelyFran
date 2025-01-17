@@ -1,0 +1,12 @@
+.gallery {
+    column-count: 2; /* Define 2 columnas */
+    gap: 8px;
+    margin: 0 15px;
+
+}
+
+@media (min-width:768px) {
+    .gallery{
+        column-count: 3;
+    }
+}
