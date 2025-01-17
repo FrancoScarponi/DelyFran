@@ -4,8 +4,8 @@ import { photos } from "../../services/photos"
 export const Gallery = () => {
   return (
     <main className={css.gallery}>
-      {photos.map((photo)=>{
-        return <Card photo={photo}/>
+      {photos.map((photo, index)=>{
+        return <Card photo={photo} key={index}/>
       })}
     </main>
   )

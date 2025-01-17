@@ -3,6 +3,7 @@
     margin-bottom: 8px;
     border-radius: 4px;
     position: relative;
+    cursor: pointer;
 }
   
 .card img {
@@ -10,6 +11,7 @@
     width: 100%; /* Ajusta la imagen al ancho del contenedor */
     height: auto; /* Mantiene la proporción original */
     border-radius: 4px; 
+    
 }
 
 .overlay{
@@ -30,6 +32,7 @@
     color: rgb(221, 221, 221);
     text-align: center;
     width: 90%;
+    font-style: italic;
 }
 
 .date{
@@ -43,6 +46,26 @@
     font-style: italic;
 }
 
-.card:hover .overlay{
-    opacity: .9;
+.icon{
+    height: 30px;
+}
+
+.card .overlay:focus{
+    opacity: .85;
+}
+
+
+.icon{
+    max-width: 26px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    padding: 4px;
+    border: solid white 1px;
+    cursor: pointer;
+}
+
+.icon:hover{
+    background-color: rgb(110, 110, 110);
 }
